@@ -2,9 +2,9 @@ package com.dapp.template
 
 import android.app.Activity
 import android.app.Application
-import com.dapp.howstheweather.BuildConfig
+import com.dapp.template.BuildConfig
 import com.dapp.template.dagger.ApplicationModule
-import com.dapp.howstheweather.dagger.DaggerApplicationComponent
+import com.dapp.template.dagger.DaggerApplicationComponent
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasActivityInjector

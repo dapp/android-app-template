@@ -4,7 +4,7 @@ import android.app.Application
 import android.content.Context
 import com.dapp.template.ApiClient
 import com.dapp.template.MainActivity
-import com.dapp.howstheweather.R
+import com.dapp.template.R
 import com.dapp.template.webservices.DuckDuckGoService
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory

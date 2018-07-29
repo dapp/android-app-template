@@ -1,4 +1,4 @@
-package com.dapp.howstheweather;
+package com.dapp.template;
 
 import org.junit.Test;
 

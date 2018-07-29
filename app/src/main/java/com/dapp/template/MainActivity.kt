@@ -5,7 +5,7 @@ import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.TextView
-import com.dapp.howstheweather.R
+import com.dapp.template.R
 import com.dapp.template.model.MainActivityModel
 import com.dapp.template.model.SearchResults
 import dagger.android.AndroidInjection

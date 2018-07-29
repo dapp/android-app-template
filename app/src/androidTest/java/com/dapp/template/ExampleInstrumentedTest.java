@@ -1,4 +1,4 @@
-package com.dapp.howstheweather;
+package com.dapp.template;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
