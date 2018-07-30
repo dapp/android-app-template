@@ -5,6 +5,8 @@ import android.content.Context
 import com.dapp.template.ApiClient
 import com.dapp.template.MainActivity
 import com.dapp.template.R
+import com.dapp.template.utils.MySchedulers
+import com.dapp.template.utils.Schedulers
 import com.dapp.template.webservices.DuckDuckGoService
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
@@ -13,6 +15,7 @@ import dagger.Module
 import dagger.Provides
 import dagger.android.ContributesAndroidInjector
 import okhttp3.OkHttpClient
+import org.jetbrains.annotations.Async
 import javax.inject.Singleton
 
 
@@ -46,4 +49,9 @@ class ApplicationModule(private val application: Application) {
     @Provides
     @Singleton
     fun provideApiClient(duckDuckGoService: DuckDuckGoService) : ApiClient = ApiClient(duckDuckGoService)
+
+    @Provides
+    @Singleton
+    fun getSchedulers() : Schedulers = MySchedulers()
+
 }
