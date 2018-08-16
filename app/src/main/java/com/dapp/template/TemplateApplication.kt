@@ -17,15 +17,14 @@ package com.dapp.template
 
 import android.app.Activity
 import android.app.Application
-import com.dapp.template.BuildConfig
 import com.dapp.template.dagger.ApplicationModule
 import com.dapp.template.dagger.DaggerApplicationComponent
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasActivityInjector
-import javax.inject.Inject
 import timber.log.Timber
 import timber.log.Timber.DebugTree
+import javax.inject.Inject
 
 class TemplateApplication : Application(), HasActivityInjector {
     @Inject

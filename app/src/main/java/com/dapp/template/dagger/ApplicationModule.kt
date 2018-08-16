@@ -57,7 +57,7 @@ class ApplicationModule(private val application: Application) {
 
     @Provides
     @Singleton
-    fun provideOpenWeatherMapService(okHttpClient: OkHttpClient, moshi: Moshi) : DuckDuckGoService =
+    fun provideDuckDuckGoService(okHttpClient: OkHttpClient, moshi: Moshi) : DuckDuckGoService =
         DuckDuckGoService.Creator.create(application.resources.getString(R.string.duck_duck_go_api_url),
                 okHttpClient, moshi)
 
